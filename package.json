@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "firebase-tools": "*",
+    "jshint": "^2.9.4"
+  },
+  "preferGlobal": true,
+  "private": true,
+  "license": "MIT"
+}

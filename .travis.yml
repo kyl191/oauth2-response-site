@@ -1,0 +1,15 @@
+language: node_js
+cache:
+  - npm
+node_js:
+  - "node"
+git:
+  depth: 3
+notifications:
+  email:
+    on_success: never
+install:
+  - npm install -g --only=dev
+script: jshint public
+after_success:
+  - firebase deploy --token ${FIREBASE_TOKEN}
