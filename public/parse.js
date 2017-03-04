@@ -1,5 +1,5 @@
-"use strict";
 $(function() {
+  "use strict";
   $("#noscript").hide();
   var uri = new URI(window.location).search(true);
   if (uri.hasOwnProperty("code") && uri.code &&  uri.code.length < 0){
