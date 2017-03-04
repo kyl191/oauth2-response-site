@@ -1,8 +1,8 @@
 $(function() {
   "use strict";
-  $("#noscript").hide();
+  $(".noscript").hide();
   var uri = new URI(window.location).search(true);
-  if (uri.hasOwnProperty("code") && uri.code &&  uri.code.length > 0){
+  if (uri.hasOwnProperty("code") && uri.code && uri.code.length > 0){
     $("#code").text(uri.code);
   } else {
     if (uri.hasOwnProperty("error")){
